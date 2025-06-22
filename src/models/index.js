@@ -1,5 +1,4 @@
 const sequelize = require('../config/database');
-const Animes = require('./animes');
 const Users = require('./users')
 
 sequelize.sync({ force: false })
@@ -11,6 +10,5 @@ sequelize.sync({ force: false })
     });
 
 module.exports = {
-    Animes,
     Users
 };
